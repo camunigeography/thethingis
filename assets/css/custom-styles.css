@@ -1,0 +1,221 @@
+/* ==========================================================================
+   Insert Your Custom Styles Below. All styles located in this file will
+   override existing main.css stylesheets.
+   ========================================================================== */ 
+
+
+.ipad_frame {
+	position: absolute;
+	margin: 0px;
+	left: 0px;
+	top: 0px;
+	width: 770px;
+	height: 545px;
+	border: 0px solid #f00;
+}
+
+/* ==========================================================================
+   Text Styles
+   ========================================================================== */
+
+h1, h2, h3, h4, h5, h6, p {
+	font-family: 'gill sans', 'Open Sans', sans-serif;
+	margin: 0px;
+}
+
+h3 {
+	padding-top: 15px;
+}
+
+h4 {
+	letter-spacing: -1px;
+	color: #31363a;
+	font-size: 20px;
+	font-weight: 300;
+}
+
+h5 {
+	padding-top: 2px;
+}
+
+h6 {
+	padding-top: 3px;
+}
+
+p {
+	line-height: 22px;
+	font-weight: 400;
+	letter-spacing: 1px;
+	color: #555;
+}
+
+p.intro {
+	padding-top: 10px;
+	font-size: 18px;
+	line-height: 17px;
+}
+
+p.body {
+	font-size: 20px;
+	padding-top: 15px;
+}
+
+.italicise {
+	font-style: italic;
+}
+
+.bold {
+	font-weight: 600;
+}
+
+.text-space {
+	padding-left: 170px;
+}
+
+/* ==========================================================================
+   Colour styles
+   ========================================================================== */
+
+.black {
+	color: #31363a;
+}
+
+.dark-gray {
+	color: #626c72;
+}
+
+.gray {
+	color: #a5b2b9;
+}
+
+.light-gray {
+	color: #dfe5e8;
+}
+
+.white {
+	color: #FFFFFF;
+}
+.orange {
+	color: #567e5c;
+}
+.full-black {
+	line-height: 23px;
+	color: #000;
+	font-weight: 400;
+}
+
+
+/* ==========================================================================
+   Navigation styles
+   ========================================================================== */
+.navbar {
+	background-color: #6f87a6;
+    border-color: transparent;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 60px;
+    font-family: 'gill sans';
+}
+
+/* ==========================================================================
+   Section Styles
+   ========================================================================== */
+
+#content1 {
+	margin-top: 65px;
+	margin-bottom: 10px;
+}
+
+#content2 {
+	margin-top: 55px;
+}
+
+#content3 {
+	margin-top: 55px;
+	margin-bottom: 10px;
+}
+
+#content4 {
+	margin: 0px;
+	margin-top: 60px;
+	width: 771px;
+	height: 100%;
+	padding: 0px;
+	padding-top: 2px;
+	background-color: #000;
+	border: 1px solid #000;
+}
+
+#image-grid {
+	margin-top: 0px;
+}
+
+#image-grid1 {
+	margin-top: 20px;
+}
+
+.margin-0 {
+    margin: 0 !important;
+}
+.margin-b-10 {
+    margin-bottom: 10px !important;
+}
+
+/* ==========================================================================
+   Media Styles
+   ========================================================================== */
+
+.thumbnail0, .thumbnail1, .thumbnail2, .thumbnail3 {
+	padding-bottom: 10px;
+}
+
+.thumbnail0, .thumbnail3 {
+	padding-top: 15px;
+}
+
+.theme-links {
+	border: 1px solid #626c72;
+}
+
+.video-close {
+position: absolute;
+  display: block;
+  padding: 5px;
+  top: 60px;
+  right: 12px;
+  left: auto;
+  margin: -15px;
+  font-size: 60px;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #000;
+}
+
+.video-close:hover,.video-close:active, .video-close:visited {
+	color: #fff;
+	text-decoration: none;
+}
+
+.video-description {
+    position: absolute;
+    display: block;
+    z-index: 999;
+    left: 0px;
+    bottom:-2px;
+    width: 771px;
+    padding: 0px;
+    padding-bottom: 5px;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'gill sans';
+    line-height: 20px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    background-color: rgb(111,135,166);
+    text-align: center;
+}
+
+.audio-wrapper {
+}
+

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>WebApp - Framework</title>
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="viewport" content="width=device-width, user-scalable=no">
+
+		<!-- Styles -->
+		
+		<link rel="stylesheet" href="../assets/css/font-awesome.min.css">
+		<link rel="stylesheet" href="../assets/css/animate.css">
+		<link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../assets/css/blueimp-gallery.css">
+		<link rel="stylesheet" href="../assets/css/custom-styles.css">
+				<!-- 
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" type="text/css">
+		-->
+
+	</head>
+	<body>
+
+		
+		<div class="ipad_frame" class="col-md-12"></div>
+
+		
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 text-center white">
+					Sun compass
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!--Main Content Section-->
+	
+	<section id="content3" class="section">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<h3 class="black">The Discovery Expedition</h3>
+				</div>
+				<div class="col-sm-10">
+					<p class="body">The British National Antarctic Expedition, 1901&#8211;04 (leader Robert Falcon Scott) undertook the first extensive exploration on land in Antarctica. Funding came from the Government, the Royal Society, the Royal Geographical Society and private donations. The expedition set up base at McMurdo Sound from where sledging parties carried out reconaissance and scientific programmes including a journey to the Cape Crozier emperor penguin rookery and exploration along the west of Victoria Land, leading to the discovery of the Ferrar glacier. Scott made the first balloon ascent on the continent in 1902. A three-man sledge party consisting of Scott, Ernest Shackleton and Edward Wilson achieved a furthest south of 82.28° on 30 December 1902. The expedition ship, <span class="italicise">Discovery</span>, commissioned and built in Dundee especially for the expedition was beset in McMurdo Sound from 1902&#8211;04. <p /><p class="body">Two relief expeditions were sent to <span class="italicise">Discovery</span>. The first (1902&#8211;03) was organised by the Royal Geographical Society, the second (1903&#8211;04) by the Royal Navy. The steam yacht <span class="italicise">Morning</span>, captained by William Colbeck, took part in both expeditions; on the second voyage she was joined by the steam yacht <span class="italicise">Terra Nova</span>, captained by Henry Duncan MacKay. After <span class="italicise">Discovery</span> was freed from the ice the three ships sailed north in February 1904.</p>
+				</div>
+				<div class="col-sm-2 text-right">
+					
+	<div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+	    <div class="slides"></div>
+	    <h3 class="title"></h3>
+	    <p class="description"></p>
+	    <a class="prev">‹</a>
+	    <a class="next">›</a>
+	    <a class="close"><h3>CLOSE</h3></a>
+	</div>
+	<div id="links">
+		
+		<div class="thumbnail2">
+			<a
+				class="overlay"
+				data-description='The expedition ship Discovery was purpose built in Dundee for Captain Scott&#8217;s British National Antarctic Expedition 1901–04 (©SPRI P83/6/2/1/64)'
+				href="http://hogsden.org/thingis/media/583.jpg"
+				type="image/jpeg"
+				data-gallery>
+				<img src="http://hogsden.org/thingis/media/287.jpg" width="100" height="100" />
+				<h6 class="dark-gray text-left">Expedition ship Discovery</h6>		
+			</a>
+		</div>
+		
+		<div class="thumbnail2">
+			<a
+				class="overlay"
+				data-description='The Discovery iced in at Winter Quarters Bay, with the relief ships Morning and Terra Nova Photo: Robert Falcon Scott (©SPRI P83/6/2/1/69)'
+				href="http://hogsden.org/thingis/media/584.jpg"
+				type="image/jpeg"
+				data-gallery>
+				<img src="http://hogsden.org/thingis/media/288.jpg" width="100" height="100" />
+				<h6 class="dark-gray text-left">Iced in at Winter Quarters Bay</h6>		
+			</a>
+		</div>
+		
+		<div class="thumbnail2">
+			<a
+				class="overlay"
+				data-description='Moonlight view of the ship Discovery in winter 1902, held fast in the ice. Photo: Charles Royds. (©SPRI P83/6/1/3/101)'
+				href="http://hogsden.org/thingis/media/585.jpg"
+				type="image/jpeg"
+				data-gallery>
+				<img src="http://hogsden.org/thingis/media/289.jpg" width="100" height="100" />
+				<h6 class="dark-gray text-left">Discovery in winter 1902</h6>		
+			</a>
+		</div>
+		
+	</div>
+	
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	
+		<!-- Javascript -->
+		
+		<script src="../assets/js/jquery-1.10.1.min.js"></script>
+		<script src="../assets/js/bootstrap.min.js"></script>
+		
+		<!-- Load content specific js -->
+
+		
+	<script src="../assets/js/blueimp-gallery.min.js"></script>
+	<script>
+	document.getElementById('links').onclick = function (event) {
+	    event = event || window.event;
+	    var target = event.target || event.srcElement,
+	        link = target.src ? target.parentNode : target,
+	        options = {index: link, event: event, onslide: function (index, slide) {
+	            var text = this.list[index].getAttribute('data-description'),
+	                node = this.container.find('.description');
+	            node.empty();
+	            if (text) {
+	                node[0].appendChild(document.createTextNode(text));
+	            }
+	        } },
+	        links = this.getElementsByClassName("overlay");
+	    blueimp.Gallery(links, options);
+	};
+	</script>
+
+		
+	</body>
+</html>
+

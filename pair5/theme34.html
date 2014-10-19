@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>WebApp - Framework</title>
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="viewport" content="width=device-width, user-scalable=no">
+
+		<!-- Styles -->
+		
+		<link rel="stylesheet" href="../assets/css/font-awesome.min.css">
+		<link rel="stylesheet" href="../assets/css/animate.css">
+		<link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../assets/css/blueimp-gallery.css">
+		<link rel="stylesheet" href="../assets/css/custom-styles.css">
+				<!-- 
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" type="text/css">
+		-->
+
+	</head>
+	<body>
+
+		
+		<div class="ipad_frame" class="col-md-12"></div>
+
+		
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 text-center white">
+					Kerrich Skyscape
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!--Main Content Section-->
+	
+	<section id="content3" class="section">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<h3 class="black">Kerrich as Artist</h3>
+				</div>
+				<div class="col-sm-10">
+					<p class="body">Thomas Kerrich <br />1748&#8211;1828<br /><span class="bold">Self-portrait</span><br />c.1774<br />Pen and ink with grey wash over graphite on paper<br />Given by Felder Fine Art, 2001<p /><p class="body">Kerrich was a clergyman, a distinguished antiquarian and a gifted amateur artist. After graduating from Magdalene College, Cambridge in 1771, he travelled to Europe on the Grand Tour, and was awarded a silver medal for drawing by the academy in Antwerp. In 1797 he was elected Fellow of the Royal Society and in the same year was appointed Cambridge University Librarian. A significant part of Kerrich&#8217;s own collection of paintings, drawings, and &#8211; especially &#8211; prints came to enrich the collections of the Fitzwilliam through the bequest of his son, Richard Edward Kerrich in 1873; other parts of his collection were left to the British Museum and the Society of Antiquaries.<p /><p class="body">As a draughtsman, Kerrich worked mainly as a portraitist, and he made a special study of Gothic architecture and sepulchral monuments. He was one of the first artists to work in lithography, and to take an interest in atmospheric sky effects and cloud formations, anticipating by several decades that of artists such as John Constable (the donors of this drawings also gave three examples of Kerrich&#8217;s chalk sky studies as part of their gift). This self-portrait was probably drawn when Kerrich was in Italy in the mid-1770s; another, equally eccentrically posed version (now in the National Portrait Gallery) is dated 1774. Both portraits have a quirky, fantasy element that recalls the work of the Swiss artist Henry Fuseli (1741&#8211;1825) who was also in Italy in these years, and was part of the same international circle of artists as John Brown, whose portrait of Captain Wood(s) is another recent acquisition.<p /><p class="body">Caption courtesy of The Fitzwilliam Museum.</p>
+				</div>
+				<div class="col-sm-2 text-right">
+					
+	<div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+	    <div class="slides"></div>
+	    <h3 class="title"></h3>
+	    <p class="description"></p>
+	    <a class="prev">‹</a>
+	    <a class="next">›</a>
+	    <a class="close"><h3>CLOSE</h3></a>
+	</div>
+	<div id="links">
+		
+		<div class="thumbnail2">
+			<a
+				class="overlay"
+				data-description='Thomas Kerrich, self-portrait c.1774. Image courtesy of the Fitzwilliam Museum'
+				href="http://hogsden.org/thingis/media/464.jpg"
+				type="image/jpeg"
+				data-gallery>
+				<img src="http://hogsden.org/thingis/media/167.jpg" width="100" height="100" />
+				<h6 class="dark-gray text-left">Self-portrait</h6>		
+			</a>
+		</div>
+		
+		<div class="thumbnail2">
+			<a
+				class="overlay"
+				data-description='Thomas Kerrich, self-portrait, chalk, 1774, NPG 6531. (Image © National Portrait Gallery, London)'
+				href="http://hogsden.org/thingis/media/465.jpg"
+				type="image/jpeg"
+				data-gallery>
+				<img src="http://hogsden.org/thingis/media/168.jpg" width="100" height="100" />
+				<h6 class="dark-gray text-left">Self-portrait (chalk)</h6>		
+			</a>
+		</div>
+		
+	</div>
+	
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	
+		<!-- Javascript -->
+		
+		<script src="../assets/js/jquery-1.10.1.min.js"></script>
+		<script src="../assets/js/bootstrap.min.js"></script>
+		
+		<!-- Load content specific js -->
+
+		
+	<script src="../assets/js/blueimp-gallery.min.js"></script>
+	<script>
+	document.getElementById('links').onclick = function (event) {
+	    event = event || window.event;
+	    var target = event.target || event.srcElement,
+	        link = target.src ? target.parentNode : target,
+	        options = {index: link, event: event, onslide: function (index, slide) {
+	            var text = this.list[index].getAttribute('data-description'),
+	                node = this.container.find('.description');
+	            node.empty();
+	            if (text) {
+	                node[0].appendChild(document.createTextNode(text));
+	            }
+	        } },
+	        links = this.getElementsByClassName("overlay");
+	    blueimp.Gallery(links, options);
+	};
+	</script>
+
+		
+	</body>
+</html>
+

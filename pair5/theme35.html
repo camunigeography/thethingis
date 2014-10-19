@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>WebApp - Framework</title>
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="viewport" content="width=device-width, user-scalable=no">
+
+		<!-- Styles -->
+		
+		<link rel="stylesheet" href="../assets/css/font-awesome.min.css">
+		<link rel="stylesheet" href="../assets/css/animate.css">
+		<link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../assets/css/blueimp-gallery.css">
+		<link rel="stylesheet" href="../assets/css/custom-styles.css">
+				<!-- 
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" type="text/css">
+		-->
+
+	</head>
+	<body>
+
+		
+		<div class="ipad_frame" class="col-md-12"></div>
+
+		
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 text-center white">
+					Kerrich Skyscape
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!--Main Content Section-->
+	
+	<section id="content3" class="section">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<h3 class="black">Thomas Kerrich</h3>
+				</div>
+				<div class="col-sm-10">
+					<p class="body">Thomas Kerrich (1748&#8211;1828) was elected Protobibliothecarius (Principal Librarian) in 1797, and held this office for over thirty years, until his death in 1828. His election was secured by a majority of only 28 out of a total of 168 votes cast. This was scarcely a ringing endorsement, considering that his only competitor was a man of poor health who had &#8216;lost one eye and suffered from so much inflammation in the other eye that he was frequently confined for days together to his bed&#8217;. (Gunning Reminiscences 2 p.78) In fact, Kerrich had long been associated with the Library, had strong antiquarian leanings, and devoted much energy to the visual arts, as portraitist, engraver, recorder of ancient monuments and historian. His talents were recognised shortly after his appointment in his election to the Society of Antiquaries. His standards as an artist were high at a time when the demand for accurate drawings of objects of antiquarian interest was increasing.<p /><p class="body">My interest in Kerrich lies in his impact on the Library itself.  His most important legacy was his development of the Library&#8217;s collections and his private interests in the antiquities, fine art and architecture of Western Europe were reflected in the books he purchased with the Library&#8217;s limited funds. Every Cambridge Librarian has also relied upon the generosity of donors to build on its collections and happily for Kerrich and the Library his tenure was marked by major gifts of Syriac, Persian and Arabic manuscripts. Another major acquisition &#8211; a 65-volume printed collection of native Indian literature eventually arrived safely in Cambridge from Calcutta, but only after the first shipment had been captured and carried into Mauritius!<p /><p class="body">His time as Librarian was also marked by improvements in security. In 1798, the Library Syndicate (its governing body and still in existence) stipulated &#8217;that no Manuscript whatever may be taken out of the Library, without a Grace for its removal being obtained from the Senate&#8217;. (This rule remained unaltered until 2005 when final authority was given instead to the Library Syndicate)  Two years later, in 1800, borrowing of books by senior members was limited to 10 volumes. Though unremarkable to modern eyes, these developments mark a major advance in the responsibilities and scope of librarianship, implying as they do a significantly expanded role for the Library in the custodianship of its physical resources. Where Kerrich led, electronic security systems have followed.<p /><p class="body">In all of these endeavours, Kerrich was more than ably assisted for many years by his second in command, the bibliothecarius, indefatigable antiquarian and mineralogist, Edward Daniel Clarke (1769&#8211;1822), Fellow of Jesus College. Together they ensured that by the time of Kerrich&#8217;s death, the Library had grown in size, had significantly larger collections and was more frequented by readers than ever before. This was a remarkable achievement, and one that marks the emergence of the University Library as a modern lending library for scholars.<p /><p class="body">Anne Jarvis<br />University Librarian (2009&#8211; )<br />Cambridge University Library</p>
+				</div>
+				<div class="col-sm-2 text-right">
+					
+	<div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+	    <div class="slides"></div>
+	    <h3 class="title"></h3>
+	    <p class="description"></p>
+	    <a class="prev">‹</a>
+	    <a class="next">›</a>
+	    <a class="close"><h3>CLOSE</h3></a>
+	</div>
+	<div id="links">
+		
+		<div class="thumbnail2">
+			<a
+				class="overlay"
+				data-description='Thomas Kerrich, by and published by Georg Siegmund Facius, after Henry Perronet Briggs, mezzotint, published 12 June 1815, NPG D8389. (Image © National Portrait Gallery, London)'
+				href="http://hogsden.org/thingis/media/466.jpg"
+				type="image/jpeg"
+				data-gallery>
+				<img src="http://hogsden.org/thingis/media/169.jpg" width="100" height="100" />
+				<h6 class="dark-gray text-left">Thomas Kerrich by Georg Siegmund Facius</h6>		
+			</a>
+		</div>
+		
+		<div class="thumbnail2">
+			<a
+				class="overlay"
+				data-description='Portrait of Ann Jarvis, University of Cambridge Librarian'
+				href="http://hogsden.org/thingis/media/637.jpg"
+				type="image/jpeg"
+				data-gallery>
+				<img src="http://hogsden.org/thingis/media/636.jpg" width="100" height="100" />
+				<h6 class="dark-gray text-left">Portrait of Ann Jarvis</h6>		
+			</a>
+		</div>
+		
+	</div>
+	
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	
+		<!-- Javascript -->
+		
+		<script src="../assets/js/jquery-1.10.1.min.js"></script>
+		<script src="../assets/js/bootstrap.min.js"></script>
+		
+		<!-- Load content specific js -->
+
+		
+	<script src="../assets/js/blueimp-gallery.min.js"></script>
+	<script>
+	document.getElementById('links').onclick = function (event) {
+	    event = event || window.event;
+	    var target = event.target || event.srcElement,
+	        link = target.src ? target.parentNode : target,
+	        options = {index: link, event: event, onslide: function (index, slide) {
+	            var text = this.list[index].getAttribute('data-description'),
+	                node = this.container.find('.description');
+	            node.empty();
+	            if (text) {
+	                node[0].appendChild(document.createTextNode(text));
+	            }
+	        } },
+	        links = this.getElementsByClassName("overlay");
+	    blueimp.Gallery(links, options);
+	};
+	</script>
+
+		
+	</body>
+</html>
+
